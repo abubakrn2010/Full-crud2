@@ -60,20 +60,20 @@ function About() {
     setelem({id:null,name:'',description:''})
   }
 
-    const handeladdsubmit=(e)=>{
-    e.preventDefault()
-
-    const formdata=new FormData()
-    formdata.append("Name",e.target.name.value)
-    formdata.append("Description",e.target.description.value)
-    formdata.append("Images",e.target.img.files[0])
-    adduser(formdata)
-   e.target.reset()
-  }
-  
   useEffect(() => {
     getUsers();
   }, []);
+  
+  const handeladdsubmit=(e)=>{
+  e.preventDefault()
+
+  const formdata=new FormData()
+  formdata.append("Name",e.target.name.value)
+  formdata.append("Description",e.target.description.value)
+  formdata.append("Images",e.target.img.files[0])
+  adduser(formdata)
+ e.target.reset()
+}
 
 
 
@@ -101,9 +101,10 @@ function About() {
       <button type="submit">Add user</button>
 </form>
 
-      {todos.map((e) => {
+      {todos.map((e:any) => {
         return (
           <div key={e.id} className="border border-gray-400 p-4 m-2 rounded-lg w-[200px]">
+
             <img src={imgapi+e?.images[0]?.imageName} alt="" />
             <h2>{e.name}</h2>
             <p>{e.description}</p>
@@ -115,7 +116,6 @@ function About() {
       })}
 
     </div>
-  )
-}
+  )}
 
-export default About;
+  export default About

@@ -1,41 +1,85 @@
-import React from 'react'
 
 const Section4 = () => {
   return (
-    <div>
-      <section className="w-full max-w-[1200px] mx-auto px-5 sm:px-8 py-12 sm:py-16">
-            <div className="w-full rounded-[16px] overflow-hidden grid grid-cols-1 lg:grid-cols-2 min-h-[520px]">
+    <section id="about" className="w-full py-16 bg-[#fff8f0]">
 
-                <div className="relative w-full min-h-[320px] sm:min-h-[400px] lg:min-h-[520px] bg-[#dbece6]">
-                    <img
-                        src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1400&q=85"
-                        alt="Luxury poolside villa"
-                        className="w-full h-full object-cover object-center block"
-                    />
+      <div className="max-w-[1170px] mx-auto px-4">
+
+        <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-14">
+
+          <div className="w-full lg:w-1/2">
+
+            <img
+              src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=900&q=85"
+              alt="Cafe interior"
+              className="w-full h-[320px] sm:h-[420px] object-cover rounded-[30px]"
+            />
+
+          </div>
+
+          <div className="w-full lg:w-1/2">
+
+            <span className="bg-[#f4dfc9] text-[#a45b35] px-5 py-2 rounded-full text-sm font-semibold">
+              About Us
+            </span>
+
+            <h2 className="text-[36px] sm:text-[48px] font-bold font-serif leading-tight mt-6">
+              A Cozy Place
+              <br />
+              for Coffee Lovers
+            </h2>
+
+            <p className="text-[#765e50] leading-7 mt-5">
+              At CaféAura, we believe coffee is more than a drink.
+              It's a lifestyle. Come, relax and enjoy every sip.
+              We make every cup with passion, love and fresh ingredients.
+            </p>
+
+            <a href="#contact" className="inline-block bg-[#542b17] text-white px-7 py-3 rounded-full mt-7">
+              Learn More →
+            </a>
+
+            <div className="flex flex-col gap-5 mt-10">
+
+              <div className="flex items-center gap-4">
+                <div className="w-14 h-14 rounded-full bg-[#f4dfc9] flex items-center justify-center text-2xl">
+                  ☕
                 </div>
-
-                <div className="bg-[#f3faf7] px-7 py-10 sm:px-[56px] sm:py-[64px] flex flex-col justify-center items-start">
-
-                    <h2 className="text-[32px] sm:text-[40px] font-bold text-[#0b0b0b] leading-[1.2] tracking-[-0.02em]">
-                        Discover our History
-                    </h2>
-
-                    <p className="mt-[22px] text-[15px] font-normal leading-[1.75] text-[#6b7280] max-w-[465px]">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                    </p>
-
-                    <p className="mt-[22px] text-[15px] font-normal leading-[1.75] text-[#6b7280] max-w-[465px]">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    </p>
-
-                    <button className="mt-[34px] bg-[#22a06b] hover:bg-[#1c8a5b] text-white text-[14.5px] font-medium px-[34px] py-[14px] rounded-full transition-all duration-200 hover:-translate-y-[1px] hover:shadow-[0_8px_20px_rgba(34,160,107,0.24)]">
-                        Explore More
-                    </button>
-
+                <div>
+                  <h3 className="font-bold">Premium Quality</h3>
+                  <p className="text-sm text-[#765e50]">Fresh coffee beans</p>
                 </div>
+              </div>
+
+              <div className="flex items-center gap-4">
+                <div className="w-14 h-14 rounded-full bg-[#f4dfc9] flex items-center justify-center text-2xl">
+                  ♡
+                </div>
+                <div>
+                  <h3 className="font-bold">Friendly Atmosphere</h3>
+                  <p className="text-sm text-[#765e50]">Feel like home</p>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-4">
+                <div className="w-14 h-14 rounded-full bg-[#f4dfc9] flex items-center justify-center text-2xl">
+                  ♨
+                </div>
+                <div>
+                  <h3 className="font-bold">Fast Service</h3>
+                  <p className="text-sm text-[#765e50]">Always fresh and quick</p>
+                </div>
+              </div>
+
             </div>
-        </section>
-    </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
   )
 }
 

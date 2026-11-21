@@ -1,99 +1,60 @@
-import React from 'react'
 
 const Section2 = () => {
+
   return (
-    <div style={{marginTop:'20px'}}>
-        <section className="w-full bg-white py-[60px] px-6">
-            <div className="max-w-[1200px] mx-auto">
+    <section id="menu" className="w-full py-16 bg-[#fff8f0]">
 
-                <div className="flex justify-between items-center mb-10">
-                    <div>
-                        <h2 className="text-[32px] font-bold text-[#222]">
-                            Our most popular Hotels
-                        </h2>
+      <div className="max-w-[1170px] mx-auto px-4">
 
-                        <p className="text-gray-500 mt-2">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        </p>
-                    </div>
+        <div className="text-center mb-10">
 
-                    <button className="bg-[#377dff] text-white px-6 py-3 rounded-lg">
-                        View All
-                    </button>
-                </div>
+          <p className="text-[#a45b35] font-semibold">Our Menu</p>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <h2 className="text-[32px] sm:text-[42px] font-bold font-serif mt-2">
+            Popular Categories
+          </h2>
 
-                    <div className="bg-[#f9fafa] rounded-xl overflow-hidden">
-                        <img
-                            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=85"
-                            className="w-full h-[300px] object-cover"
-                        />
+          <div className="w-20 h-1 bg-[#a45b35] mx-auto mt-4 rounded"></div>
 
-                        <div className="p-5">
-                            <h3 className="text-xl font-bold">
-                                Danubius Hotel Regents Park
-                            </h3>
+        </div>
 
-                            <p className="text-gray-500 mt-2">
-                                London NW8 7JT England
-                            </p>
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
 
-                            <div className="flex justify-between mt-5">
-                                <p className="font-bold">$200 <span className="text-gray-500 font-normal">Par Night</span></p>
-                                <p className="text-yellow-500">★ 4.8</p>
-                            </div>
-                        </div>
-                    </div>
+          <div className="bg-[#f8e9da] rounded-2xl p-5 text-center hover:-translate-y-2 transition">
+            <img src="https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?auto=format&fit=crop&w=300&q=80" className="w-full h-[110px] object-cover rounded-xl" />
+            <h3 className="font-semibold mt-4">Espresso</h3>
+          </div>
 
-                    <div className="bg-[#f9fafa] rounded-xl overflow-hidden">
-                        <img
-                            src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=900&q=85"
-                            className="w-full h-[300px] object-cover"
-                        />
+          <div className="bg-[#f8e9da] rounded-2xl p-5 text-center hover:-translate-y-2 transition">
+            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=300&q=80" className="w-full h-[110px] object-cover rounded-xl" />
+            <h3 className="font-semibold mt-4">Latte</h3>
+          </div>
 
-                        <div className="p-5">
-                            <h3 className="text-xl font-bold">
-                                The Resident Soho
-                            </h3>
+          <div className="bg-[#f8e9da] rounded-2xl p-5 text-center hover:-translate-y-2 transition">
+            <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=300&q=80" className="w-full h-[110px] object-cover rounded-xl" />
+            <h3 className="font-semibold mt-4">Iced Coffee</h3>
+          </div>
 
-                            <p className="text-gray-500 mt-2">
-                                London NW8 7JT England
-                            </p>
+          <div className="bg-[#f8e9da] rounded-2xl p-5 text-center hover:-translate-y-2 transition">
+            <img src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?auto=format&fit=crop&w=300&q=80" className="w-full h-[110px] object-cover rounded-xl" />
+            <h3 className="font-semibold mt-4">Cappuccino</h3>
+          </div>
 
-                            <div className="flex justify-between mt-5">
-                                <p className="font-bold">$200 <span className="text-gray-500 font-normal">Par Night</span></p>
-                                <p className="text-yellow-500">★ 4.8</p>
-                            </div>
-                        </div>
-                    </div>
+          <div className="bg-[#f8e9da] rounded-2xl p-5 text-center hover:-translate-y-2 transition">
+            <img src="https://images.unsplash.com/photo-1572286258217-215cf8e9f3a1?auto=format&fit=crop&w=300&q=80" className="w-full h-[110px] object-cover rounded-xl" />
+            <h3 className="font-semibold mt-4">Mocha</h3>
+          </div>
 
-                    <div className="bg-[#f9fafa] rounded-xl overflow-hidden">
-                        <img
-                            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=85"
-                            className="w-full h-[300px] object-cover"
-                        />
+          <div className="bg-[#f8e9da] rounded-2xl p-5 text-center hover:-translate-y-2 transition">
+            <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=300&q=80" className="w-full h-[110px] object-cover rounded-xl" />
+            <h3 className="font-semibold mt-4">Tea</h3>
+          </div>
 
-                        <div className="p-5">
-                            <h3 className="text-xl font-bold">
-                                London Bridge Hotel
-                            </h3>
+        </div>
 
-                            <p className="text-gray-500 mt-2">
-                                London NW8 7JT England
-                            </p>
+      </div>
 
-                            <div className="flex justify-between mt-5">
-                                <p className="font-bold">$200 <span className="text-gray-500 font-normal">Par Night</span></p>
-                                <p className="text-yellow-500">★ 4.8</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-    </div>
+    </section>
   )
 }
 

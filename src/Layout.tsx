@@ -1,55 +1,64 @@
+
 import { Link, Outlet } from 'react-router'
 
 const Layout = () => {
-    return (
-        <div>
+  return (
+    <div className="bg-[#fff8f0] text-[#351b10] font-sans">
 
-            <header className="w-full">
-                <div className="max-w-7xl mx-auto px-4 h-24 flex items-center justify-between">
+      <header className="w-full ">
 
-                    <div className="hidden md:block w-28"></div>
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-[75px] py-5">
 
-                    <nav className="hidden md:flex items-center gap-10">
+          <div className="flex flex-wrap items-center justify-between gap-4">
 
-                        <Link to="/" className="hover:text-green-600">
-                            Booking
-                        </Link>
+            <Link to="/" className="text-[26px] sm:text-[30px] font-bold font-serif">
+              ☕ CaféAura
+            </Link>
 
-                        <Link to="/about" className="hover:text-green-600">
-                            Facilities
-                        </Link>
+            <nav className="hidden lg:flex items-center gap-10">
 
-                        <Link to="/" className="hover:text-green-600">
-                            About U
-                        </Link>
+              <Link to="/" className="text-[15px] font-medium hover:text-[#a45b35]">
+                Home
+              </Link>
 
-                        <Link to="/" className="hover:text-green-600">
-                            Location
-                        </Link>
+              <Link to="/menu" className="text-[15px] font-medium hover:text-[#a45b35]">
+                Menu
+              </Link>
 
-                        <Link to="/" className="hover:text-green-600">
-                            Contact
-                        </Link>
+              <Link to="/abou" className="text-[15px] font-medium hover:text-[#a45b35]">
+                About
+              </Link>
 
-                    </nav>
+              <Link to="/revi" className="text-[15px] font-medium hover:text-[#a45b35]">
+                Reviews
+              </Link>
 
-                    <button className="md:hidden text-2xl">
-                        ☰
-                    </button>
+              <Link to="/about" className="text-[15px] font-medium hover:text-[#a45b35]">
+                Full-Crud
+              </Link>
 
-                    <div className="md:w-28 flex justify-end">
-                        <button className="bg-[#22a06b] text-white px-7 py-2.5 rounded-full">
-                            Login
-                        </button>
-                    </div>
+            </nav>
 
-                </div>
-            </header>
+            <div className="flex items-center gap-3">
 
-            <Outlet />
+              <button className="text-xl p-2">⌕</button>
+
+              <Link to="/" className="bg-[#542b17] text-white px-5 sm:px-7 py-3 rounded-full text-sm font-semibold hover:bg-[#75452b]">
+                Order Now →
+              </Link>
+
+            </div>
+
+          </div>
 
         </div>
-    )
+
+      </header>
+
+      <Outlet />
+
+    </div>
+  )
 }
 
 export default Layout

@@ -1,105 +1,60 @@
-import React from 'react'
 
 const Section1 = () => {
   return (
-     <div className="min-h-screen bg-white flex items-center justify-center p-4">
+    <section className="w-full bg-[#fff3e7]">
 
-      <section className="w-full max-w-[1200px] grid grid-cols-1 lg:grid-cols-2 overflow-hidden rounded-t-[40px]">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-[75px]">
 
-    
-        <div className="bg-[#f4f9f6] p-8 sm:p-12 lg:p-16 flex flex-col justify-center">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-10 py-12 lg:py-16">
 
-          <h1 className="text-4xl sm:text-5xl lg:text-[54px] font-bold leading-tight text-black">
-            Find your perfect
-            <br />
-            place to stay
-          </h1>
+          <div className="w-full md:w-[48%]">
 
-          <p className="mt-6 text-gray-600 leading-relaxed">
-            Lorem Ipsum is simply dummy text of the printing and
-            typesetting industry.
-          </p>
+            <div className="inline-block bg-[#f4dfc9] px-5 py-2 rounded-full text-sm mb-6">
+              ☕ Welcome to CaféAura
+            </div>
 
-          <div className="mt-9 flex items-center gap-4">
+            <h1 className="text-[45px] sm:text-[58px] lg:text-[76px] font-bold font-serif leading-[1.05]">
+              Good Coffee
+              <br />
+              Good <span className="text-[#a45b35] italic">Mood</span>
+            </h1>
 
-            <button className="w-12 h-12 rounded-full bg-white shadow-md text-green-600 text-xl">
-              ▶
-            </button>
+            <p className="text-[#765e50] text-[16px] sm:text-[18px] mt-6 max-w-[420px] leading-7">
+              Enjoy the best coffee, made with love and fresh ingredients.
+            </p>
 
-            <p className="font-semibold">Watch video</p>
+            <div className="flex flex-wrap items-center gap-5 mt-8">
+
+              <a href="#menu" className="bg-[#542b17] text-white px-7 py-4 rounded-full font-semibold hover:bg-[#75452b]">
+                Explore Menu →
+              </a>
+
+              <a href="#about" className="flex items-center gap-3 font-medium">
+                <span className="w-11 h-11 rounded-full border border-[#542b17] flex items-center justify-center text-lg">
+                  ▶
+                </span>
+                Watch Video
+              </a>
+
+            </div>
+
+          </div>
+
+          <div className="w-full md:w-[52%]">
+
+            <img
+              src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1000&q=85"
+              alt="Coffee cup"
+              className="w-full h-[300px] sm:h-[400px] lg:h-[470px] object-cover rounded-[40px]"
+            />
 
           </div>
 
         </div>
 
-    
-        <div className="min-h-[350px]">
+      </div>
 
-          <img
-            src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=1200&q=85"
-            alt="House"
-            className="w-full h-full object-cover"
-          />
-
-        </div>
-
-    
-        <div className="lg:col-span-2 flex flex-col lg:flex-row items-center justify-between gap-4 bg-white rounded-3xl lg:rounded-full p-6 lg:-mt-19 lg:mx-auto lg:w-[85%] relative">
-
-          <div className="w-full">
-            <p className="font-semibold">📍 Location</p>
-            <input
-              type="text"
-              placeholder="United States"
-              className="w-full text-sm outline-none mt-1"
-            />
-          </div>
-
-          <div className="hidden lg:block h-10 border-l"></div>
-
-        
-          <div className="w-full">
-            <p className="font-semibold">📅 Check in</p>
-            <input
-              type="text"
-              placeholder="10 Jun 2021"
-              className="w-full text-sm outline-none mt-1"
-            />
-          </div>
-
-          <div className="hidden lg:block h-10 border-l"></div>
-
-        
-          <div className="w-full">
-            <p className="font-semibold">📅 Check out</p>
-            <input
-              type="text"
-              placeholder="15 Jun 2021"
-              className="w-full text-sm outline-none mt-1"
-            />
-          </div>
-
-          <div className="hidden lg:block h-10 border-l"></div>
-
-          <div className="w-full">
-            <p className="font-semibold">👤 Rooms for</p>
-            <input
-              type="text"
-              placeholder="1 room, 2 guests"
-              className="w-full text-sm outline-none mt-1"
-            />
-          </div>
-
-        
-          <button className="bg-[#22a06b] hover:bg-green-700 text-white px-10 py-4 rounded-full w-full lg:w-auto">
-            🔍 Search...
-          </button>
-
-        </div>
-
-      </section>
-
-    </div>
+    </section>
   )
 }
 
